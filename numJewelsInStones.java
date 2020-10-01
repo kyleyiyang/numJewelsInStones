@@ -25,3 +25,17 @@ class Solution {
         return n;
     }
 }
+
+//Third solution (fastest)
+class Solution {
+    public int numJewelsInStones(String J, String S) {
+        int n=0;
+        int len = S.length();
+        for (int i=0;i<len;i++) {
+            if (J.indexOf((S.charAt(i)))!=-1) {
+                n++;
+            }
+        }
+        return n;
+    }
+}
